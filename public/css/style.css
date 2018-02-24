@@ -1,0 +1,55 @@
+.numberSearchButton{
+    padding: 10px 15px;
+    display: block;
+    position: relative;
+}
+
+.note {
+    padding:5px;
+    margin:5px;
+}
+
+.error-msg {
+    margin: 20px;
+    text-align: center;
+}
+
+.bar-chart {
+    display:block;
+    height: 300px;
+    line-height: 1.2em;
+}
+
+
+.highlight-red {
+    background-color: red;
+}
+.highlight-green {
+    background-color: green;
+}
+td {
+    -webkit-transition: 1s linear all;
+    transition: 1s linear all;
+    background-color: clear;
+}
+
+.fadeMessage.ng-hide {
+  opacity: 0;
+}
+
+.fadeMessage.ng-hide-remove,
+.fadeMessage.ng-hide-add {
+  display: block !important;
+}
+
+.fadeMessage.ng-hide-remove {
+  transition: all linear 1000ms;
+}
+
+.fadeMessage.ng-hide-add {
+  transition: all linear 500ms;
+}
+
+.capitalize-text{
+    text-transform: capitalize;
+}

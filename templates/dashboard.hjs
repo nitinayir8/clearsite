@@ -1,0 +1,522 @@
+{{>header}}
+             <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Dashboard
+        <small>Control panel</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Dashboard</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      
+	  <!-- Info boxes -->
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Confidence Levels</span>
+              <span class="info-box-number">90<small>%</small></span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-red"><i class="fa fa-google-plus"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">False Alarms</span>
+              <span class="info-box-number">41,410</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+
+        <!-- fix for small devices only -->
+        <div class="clearfix visible-sm-block"></div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-green"><i class="ion ion-ios-cart-outline"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Number of Issues</span>
+              <span class="info-box-number">760</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">% issues resolved</span>
+              <span class="info-box-number">2,000</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row (main row) -->
+	  
+	  <div class="row">
+        <div class="col-md-12">
+          <div class="box">
+            <div class="box-header with-border">
+              <h3 class="box-title">Monthly Recap Report</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-wrench"></i></button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="row">
+                <div class="col-md-8">
+                  <p class="text-center">
+                    <strong>Sales: 1 Jan, 2014 - 30 Jul, 2014</strong>
+                  </p>
+
+                  <div class="chart">
+                    <!-- Sales Chart Canvas -->
+                    <canvas id="salesChart" style="height: 180px;"></canvas>
+                  </div>
+                  <!-- /.chart-responsive -->
+                </div>
+                <!-- /.col -->
+                <div class="col-md-4">
+                  <p class="text-center">
+                    <strong>Goal Completion</strong>
+                  </p>
+
+                  <div class="progress-group">
+                    <span class="progress-text">Add Products to Cart</span>
+                    <span class="progress-number"><b>160</b>/200</span>
+
+                    <div class="progress sm">
+                      <div class="progress-bar progress-bar-aqua" style="width: 80%"></div>
+                    </div>
+                  </div>
+                  <!-- /.progress-group -->
+                  <div class="progress-group">
+                    <span class="progress-text">Complete Purchase</span>
+                    <span class="progress-number"><b>310</b>/400</span>
+
+                    <div class="progress sm">
+                      <div class="progress-bar progress-bar-red" style="width: 80%"></div>
+                    </div>
+                  </div>
+                  <!-- /.progress-group -->
+                  <div class="progress-group">
+                    <span class="progress-text">Visit Premium Page</span>
+                    <span class="progress-number"><b>480</b>/800</span>
+
+                    <div class="progress sm">
+                      <div class="progress-bar progress-bar-green" style="width: 80%"></div>
+                    </div>
+                  </div>
+                  <!-- /.progress-group -->
+                  <div class="progress-group">
+                    <span class="progress-text">Send Inquiries</span>
+                    <span class="progress-number"><b>250</b>/500</span>
+
+                    <div class="progress sm">
+                      <div class="progress-bar progress-bar-yellow" style="width: 80%"></div>
+                    </div>
+                  </div>
+                  <!-- /.progress-group -->
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+            </div>
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="box">
+				<div class="col-lg-4 col-md-4">
+					<div class="card card-nav-tabs">
+						<div class="card-header" data-background-color="purple">
+							<span class="nav-tabs-title">Issues:</span>
+							<div class="nav-tabs-navigation">								
+								<div class="nav-tabs-wrapper">
+									
+									<ul class="nav nav-tabs" data-tabs="tabs">
+										<li class="active">
+											<a href="#profile" data-toggle="tab">
+												<i class="material-icons">bug_report</i>Housekeeping 
+												<div class="ripple-container"></div>
+											</a>
+										</li>
+										<li class="">
+											<a href="#messages" data-toggle="tab">
+												<i class="material-icons">code</i>Plumbing
+												<div class="ripple-container"></div>
+											</a>
+										</li>
+										<li class="">
+											<a href="#settings" data-toggle="tab">
+												<i class="material-icons">cloud</i>Security
+												<div class="ripple-container"></div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="card-content">
+							<div class="tab-content">
+								<div class="tab-pane active" id="profile">
+									<table class="table">
+										<tbody>
+											<tr>
+												<td>
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="optionsCheckboxes" checked=""><span class="checkbox-material"><span class="check"></span></span>
+														</label>
+													</div>
+												</td>
+												<td style="width: 200px;">Sign contract for "What are conference organizers afraid of?"</td>
+												<td class="td-actions text-right"  style="width: 100px;">
+													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;">				
+														
+														<i class="fa fa-info-circle"></i>
+													</button>
+													<!--
+													<button type="button" rel="tooltip" title="" class="btn btn-danger btn-simple btn-xs" data-original-title="Remove" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #f00;">
+														<i class="material-icons">close</i>
+													</button> -->
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="optionsCheckboxes"><span class="checkbox-material"><span class="check"></span></span>
+														</label>
+													</div>
+												</td>
+												<td style="width: 200px;">Lines From Great Russian Literature? Or E-mails From My Boss?</td>
+												<td class="td-actions text-right" style="width: 100px;">
+													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;">
+														<i class="fa fa-info-circle"></i>
+													</button>
+													<!--
+													<button type="button" rel="tooltip" title="" class="btn btn-danger btn-simple btn-xs" data-original-title="Remove" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #f00;">
+														<i class="material-icons">close</i>
+													</button> -->
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="optionsCheckboxes"><span class="checkbox-material"><span class="check"></span></span>
+														</label>
+													</div>
+												</td>
+												<td style="width: 200px;">Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+												</td>
+												<td class="td-actions text-right" style="width: 100px;">
+													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;">
+														<i class="fa fa-info-circle"></i>
+													</button>
+													<!--
+													<button type="button" rel="tooltip" title="" class="btn btn-danger btn-simple btn-xs" data-original-title="Remove" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #f00;">
+														<i class="material-icons">close</i>
+													</button> -->
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="optionsCheckboxes" checked=""><span class="checkbox-material"><span class="check"></span></span>
+														</label>
+													</div>
+												</td>
+												<td style="width: 200px;">Create 4 Invisible User Experiences you Never Knew About</td>
+												<td class="td-actions text-right" style="width: 100px;">
+													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;">
+														<i class="fa fa-info-circle"></i>
+													</button>
+													<!--
+													<button type="button" rel="tooltip" title="" class="btn btn-danger btn-simple btn-xs" data-original-title="Remove" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #f00;">
+														<i class="material-icons">close</i>
+													</button> -->
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="tab-pane" id="messages">
+									<table class="table">
+										<tbody>
+											<tr>
+												<td>
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="optionsCheckboxes" checked=""><span class="checkbox-material"><span class="check"></span></span>
+														</label>
+													</div>
+												</td>
+												<td style="width: 200px;">Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+												</td>
+												<td class="td-actions text-right" style="width: 100px;">
+													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;">
+														<i class="fa fa-info-circle"></i>
+													</button>
+													<!--
+													<button type="button" rel="tooltip" title="" class="btn btn-danger btn-simple btn-xs" data-original-title="Remove" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #f00;">
+														<i class="material-icons">close</i>
+													</button> -->
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="optionsCheckboxes"><span class="checkbox-material"><span class="check"></span></span>
+														</label>
+													</div>
+												</td>
+												<td style="width: 200px;">Sign contract for "What are conference organizers afraid of?"</td>
+												<td class="td-actions text-right" style="width: 100px;">
+													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;">
+														<i class="fa fa-info-circle"></i>
+													</button>
+													<!--
+													<button type="button" rel="tooltip" title="" class="btn btn-danger btn-simple btn-xs" data-original-title="Remove" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #f00;">
+														<i class="material-icons">close</i>
+													</button> -->
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="tab-pane" id="settings">
+									<table class="table">
+										<tbody>
+											<tr>
+												<td>
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="optionsCheckboxes"><span class="checkbox-material"><span class="check"></span></span>
+														</label>
+													</div>
+												</td>
+												<td style="width: 200px;">Lines From Great Russian Literature? Or E-mails From My Boss?</td>
+												<td class="td-actions text-right" style="width: 100px;">
+													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;">
+														<i class="fa fa-info-circle"></i>
+													</button>
+													<!--
+													<button type="button" rel="tooltip" title="" class="btn btn-danger btn-simple btn-xs" data-original-title="Remove" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #f00;">
+														<i class="material-icons">close</i>
+													</button> -->
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="optionsCheckboxes" checked=""><span class="checkbox-material"><span class="check"></span></span>
+														</label>
+													</div>
+												</td>
+												<td style="width: 200px;">Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+												</td>
+												<td class="td-actions text-right" style="width: 100px;">
+													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;">
+														<i class="fa fa-info-circle"></i>
+													</button>
+													<!--
+													<button type="button" rel="tooltip" title="" class="btn btn-danger btn-simple btn-xs" data-original-title="Remove" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #f00;">
+														<i class="material-icons">close</i>
+													</button> -->
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="optionsCheckboxes"><span class="checkbox-material"><span class="check"></span></span>
+														</label>
+													</div>
+												</td>
+												<td style="width: 200px;">Sign contract for "What are conference organizers afraid of?"</td>
+												<td class="td-actions text-right" style="width: 100px;">
+													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-toggle="modal" data-target="#myModal" data-original-title="Edit Task" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;">
+														<i class="fa fa-info-circle"></i>
+													</button>
+													<!--
+													<button type="button" rel="tooltip" title="" class="btn btn-danger btn-simple btn-xs" data-original-title="Remove" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #f00;">
+														<i class="material-icons">close</i>
+													</button> -->
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<div class="card">
+						<div class="card-header" data-background-color="orange">
+							<h4 class="title">Perimeter Feed</h4>
+							<p class="category">Current Feed on 15th September, 2016</p>
+						</div>
+						<div class="card-content table-responsive">
+							<table class="table table-hover">
+								<thead class="text-warning">
+									<tr><th>ID</th>
+									<th>Camera</th>
+									<th style="white-space: nowrap;">Issues Found</th>
+									<th>Location</th>
+								</tr></thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Front East Gate</td>
+										<td>25</td>
+										<td>Drill Down</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Back West Gate</td>
+										<td>9</td>
+										<td>Drill Down</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>North Front Gate</td>
+										<td>34</td>
+										<td>Drill Down</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>Main Gate</td>
+										<td>3</td>
+										<td>Drill Down</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<!-- USERS LIST -->
+					<div class="box box-danger">
+						<div class="box-header with-border">
+							<h3 class="box-title">Issues Task Assigned</h3>
+							<div class="box-tools pull-right">
+								<span class="label label-danger">8 New Members</span>
+								<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+								</button>
+								<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+								</button>
+							</div>
+						</div>
+						<!-- /.box-header -->
+						<div class="box-body no-padding">
+							<ul class="users-list clearfix">
+								<li>
+									<img src="/images/megha.jpg" alt="User Image">
+									<a class="users-list-name" href="#">Megha</a>
+									<span class="users-list-date">Today</span>
+								</li>
+								<li>
+									<img src="/images/rakesh.jpg" alt="User Image">
+									<a class="users-list-name" href="#">Rakesh</a>
+									<span class="users-list-date">Yesterday</span>
+								</li>
+								<li>
+									<img src="/images/rajat.jpg" alt="User Image">
+									<a class="users-list-name" href="#">Rajat</a>
+									<span class="users-list-date">12 Jan</span>
+								</li>
+								<li>
+									<img src="/images/abhishek.jpg" alt="User Image">
+									<a class="users-list-name" href="#">Abhishek</a>
+									<span class="users-list-date">12 Jan</span>
+								</li>
+								<li>
+									<img src="/images/nitin.jpg" alt="User Image">
+									<a class="users-list-name" href="#">Nitin</a>
+									<span class="users-list-date">13 Jan</span>
+								</li>
+								<li>
+									<img src="/images/clyde.jpg" alt="User Image">
+									<a class="users-list-name" href="#">Clyde</a>
+									<span class="users-list-date">14 Jan</span>
+								</li>
+								<li>
+									<img src="/images/ashok.jpg" alt="User Image">
+									<a class="users-list-name" href="#">Ashok</a>
+									<span class="users-list-date">15 Jan</span>
+								</li>
+								<li>
+									<img src="/images/savio.jpg" alt="User Image">
+									<a class="users-list-name" href="#">Savio</a>
+									<span class="users-list-date">15 Jan</span>
+								</li>
+							</ul>
+							<!-- /.users-list -->
+						</div>
+						<!-- /.box-body -->
+						<div class="box-footer text-center">
+							<a href="javascript:void(0)" class="uppercase">View All Users</a>
+						</div>
+						<!-- /.box-footer -->
+					</div>
+					<!--/.box -->
+				</div>
+			</div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+    </div>
+
+    </section>
+    <!-- /.content -->
+  </div>
+			
+  {{>footer}}
