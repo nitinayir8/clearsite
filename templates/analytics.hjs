@@ -57,12 +57,12 @@
 				<div class="cd-timeline-block">
 					{{#compliancetype}}
 						<div class="cd-timeline-img cd-camera">
-							<i class="fa fa-camera"></i>
+							<i class="fa  fa-credit-card"></i>
 						</div> <!-- cd-timeline-img -->
 					{{/compliancetype}}
 					{{^compliancetype}}
 						<div class="cd-timeline-img cd-image">
-							<i class="fa fa-image"></i>
+							<i class="fa  fa-credit-card"></i>
 						</div> <!-- cd-timeline-img -->
 					{{/compliancetype}}
 					<div class="cd-timeline-content">

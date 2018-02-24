@@ -20,7 +20,7 @@
       <div class="row">
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="info-box">
-            <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
+            <span class="info-box-icon bg-aqua"><i class="ion ion-clipboard"></i></span>
 
             <div class="info-box-content">
               <span class="info-box-text">Confidence Levels</span>
@@ -33,7 +33,7 @@
         <!-- /.col -->
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="info-box">
-            <span class="info-box-icon bg-red"><i class="fa fa-google-plus"></i></span>
+            <span class="info-box-icon bg-red"><i class="ion ion-ios-alarm"></i></span>
 
             <div class="info-box-content">
               <span class="info-box-text">False Alarms</span>
@@ -50,7 +50,7 @@
 
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="info-box">
-            <span class="info-box-icon bg-green"><i class="ion ion-ios-cart-outline"></i></span>
+            <span class="info-box-icon bg-yellow"><i class="ion ion-android-warning"></i></span>
 
             <div class="info-box-content">
               <span class="info-box-text">Number of Issues</span>
@@ -63,7 +63,7 @@
         <!-- /.col -->
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="info-box">
-            <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+            <span class="info-box-icon bg-green"><i class="fa fa-check-square"></i></span>
 
             <div class="info-box-content">
               <span class="info-box-text">% issues resolved</span>
@@ -121,7 +121,7 @@
                   </p>
 
                   <div class="progress-group">
-                    <span class="progress-text">Add Products to Cart</span>
+                    <span class="progress-text">Assigned Issues</span>
                     <span class="progress-number"><b>160</b>/200</span>
 
                     <div class="progress sm">
@@ -130,29 +130,29 @@
                   </div>
                   <!-- /.progress-group -->
                   <div class="progress-group">
-                    <span class="progress-text">Complete Purchase</span>
+                    <span class="progress-text">Resolved Issues</span>
                     <span class="progress-number"><b>310</b>/400</span>
 
                     <div class="progress sm">
-                      <div class="progress-bar progress-bar-red" style="width: 80%"></div>
+                      <div class="progress-bar progress-bar-red" style="width: 77%"></div>
                     </div>
                   </div>
                   <!-- /.progress-group -->
                   <div class="progress-group">
-                    <span class="progress-text">Visit Premium Page</span>
-                    <span class="progress-number"><b>480</b>/800</span>
+                    <span class="progress-text">False Alarm</span>
+                    <span class="progress-number"><b>100</b>/800</span>
 
                     <div class="progress sm">
-                      <div class="progress-bar progress-bar-green" style="width: 80%"></div>
+                      <div class="progress-bar progress-bar-green" style="width: 12.5%"></div>
                     </div>
                   </div>
                   <!-- /.progress-group -->
                   <div class="progress-group">
-                    <span class="progress-text">Send Inquiries</span>
-                    <span class="progress-number"><b>250</b>/500</span>
+                    <span class="progress-text">Auto Detected</span>
+                    <span class="progress-number"><b>300</b>/500</span>
 
                     <div class="progress sm">
-                      <div class="progress-bar progress-bar-yellow" style="width: 80%"></div>
+                      <div class="progress-bar progress-bar-yellow" style="width: 60%"></div>
                     </div>
                   </div>
                   <!-- /.progress-group -->
@@ -171,8 +171,7 @@
 			<div class="box">
 				<div class="col-lg-4 col-md-4">
 					<div class="card card-nav-tabs">
-						<div class="card-header" data-background-color="purple">
-							<span class="nav-tabs-title">Issues:</span>
+						<div class="card-header" data-background-color="orange">
 							<div class="nav-tabs-navigation">								
 								<div class="nav-tabs-wrapper">
 									
@@ -214,7 +213,7 @@
 												</td>
 												<td style="width: 200px;">Sign contract for "What are conference organizers afraid of?"</td>
 												<td class="td-actions text-right"  style="width: 100px;">
-													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;">				
+													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;font-size: 20px;">				
 														
 														<i class="fa fa-info-circle"></i>
 													</button>
@@ -234,7 +233,7 @@
 												</td>
 												<td style="width: 200px;">Lines From Great Russian Literature? Or E-mails From My Boss?</td>
 												<td class="td-actions text-right" style="width: 100px;">
-													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;">
+													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;font-size: 20px;">
 														<i class="fa fa-info-circle"></i>
 													</button>
 													<!--
@@ -254,7 +253,7 @@
 												<td style="width: 200px;">Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
 												</td>
 												<td class="td-actions text-right" style="width: 100px;">
-													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;">
+													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;font-size: 20px;">
 														<i class="fa fa-info-circle"></i>
 													</button>
 													<!--
@@ -273,7 +272,7 @@
 												</td>
 												<td style="width: 200px;">Create 4 Invisible User Experiences you Never Knew About</td>
 												<td class="td-actions text-right" style="width: 100px;">
-													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;">
+													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;font-size: 20px;">
 														<i class="fa fa-info-circle"></i>
 													</button>
 													<!--
@@ -299,7 +298,7 @@
 												<td style="width: 200px;">Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
 												</td>
 												<td class="td-actions text-right" style="width: 100px;">
-													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;">
+													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;font-size: 20px;">
 														<i class="fa fa-info-circle"></i>
 													</button>
 													<!--
@@ -318,7 +317,7 @@
 												</td>
 												<td style="width: 200px;">Sign contract for "What are conference organizers afraid of?"</td>
 												<td class="td-actions text-right" style="width: 100px;">
-													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;">
+													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;font-size: 20px;">
 														<i class="fa fa-info-circle"></i>
 													</button>
 													<!--
@@ -343,7 +342,7 @@
 												</td>
 												<td style="width: 200px;">Lines From Great Russian Literature? Or E-mails From My Boss?</td>
 												<td class="td-actions text-right" style="width: 100px;">
-													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;">
+													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;font-size: 20px;">
 														<i class="fa fa-info-circle"></i>
 													</button>
 													<!--
@@ -363,7 +362,7 @@
 												<td style="width: 200px;">Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
 												</td>
 												<td class="td-actions text-right" style="width: 100px;">
-													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;">
+													<button type="button" rel="tooltip" title="" class="btn btn-primary btn-simple btn-xs" data-original-title="Edit Task" data-toggle="modal" data-target="#myModal" style="border: 0px none; box-shadow: none; border-radius: none; background: none; color: #0f0;font-size: 20px;">
 														<i class="fa fa-info-circle"></i>
 													</button>
 													<!--
@@ -448,7 +447,6 @@
 						<div class="box-header with-border">
 							<h3 class="box-title">Issues Task Assigned</h3>
 							<div class="box-tools pull-right">
-								<span class="label label-danger">8 New Members</span>
 								<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
 								</button>
 								<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
@@ -459,51 +457,49 @@
 						<div class="box-body no-padding">
 							<ul class="users-list clearfix">
 								<li>
-									<i class="fa fa-bell" style="color: #f4ad42; position: absolute; font-size: 20px; left:-5px;"></i>
+									
 									<img src="/images/megha.jpg" alt="User Image">
 									<a class="users-list-name" href="#">Megha</a>
 									<span class="users-list-date">Today</span>
 								</li>
 								<li>
-									<i class="fa fa-bell" style="color: #f4ad42; position: absolute; font-size: 20px; left:-5px;"></i>
+									
 									<img src="/images/rakesh.jpg" alt="User Image">
 									<a class="users-list-name" href="#">Rakesh</a>
 									<span class="users-list-date">Yesterday</span>
 								</li>
 								<li>
-									<i class="fa fa-bell" style="color: #f4ad42; position: absolute; font-size: 20px; left:-5px;"></i>
+									
 									<img src="/images/rajat.jpg" alt="User Image">
 									<a class="users-list-name" href="#">Rajat</a>
 									<span class="users-list-date">12 Jan</span>
 								</li>
 								<li>
-									<i class="fa fa-bell" style="color: #f4ad42; position: absolute; font-size: 20px; left:-5px;"></i>
+									
 									<img src="/images/abhishek.jpg" alt="User Image">
 									<a class="users-list-name" href="#">Abhishek</a>
 									<span class="users-list-date">12 Jan</span>
 								</li>
 								<li>
-									<i class="fa fa-bell" style="color: #f4ad42; position: absolute; font-size: 20px; left:-5px;"></i>
+									
 									<img src="/images/nitin.jpg" alt="User Image">
 									<a class="users-list-name" href="#">Nitin</a>
 									<span class="users-list-date">13 Jan</span>
 								</li>
 								<li>
-									<i class="fa fa-bell" style="color: #f4ad42; position: absolute; font-size: 20px; left:-5px;"></i>
+									
 									<img src="/images/clyde.jpg" alt="User Image">
 									<a class="users-list-name" href="#">Clyde</a>
 									<span class="users-list-date">14 Jan</span>
 								</li>
 								<li>
-									<span class="bellspan fa-5x has-badge" data-count="8" style="position: absolute;">
-									<i class="fa fa-bell" style="color: #f4ad42; position: absolute; font-size: 20px; left:-5px;"></i>
-									</span>
+									<span class="bellspan fa-5x has-badge" data-count="8" style="position: absolute;margin-left: 6%;"></span>
 									<img src="/images/ashok.jpg" alt="User Image">
 									<a class="users-list-name" href="#">Ashok</a>
 									<span class="users-list-date">15 Jan</span>
 								</li>
 								<li>
-									<i class="fa fa-bell" style="color: #f4ad42; position: absolute; font-size: 20px; left:-5px;"></i>
+									
 									<img src="/images/savio.jpg" alt="User Image">
 									<a class="users-list-name" href="#">Savio</a>
 									<span class="users-list-date">15 Jan</span>
@@ -512,9 +508,6 @@
 							<!-- /.users-list -->
 						</div>
 						<!-- /.box-body -->
-						<div class="box-footer text-center">
-							<a href="javascript:void(0)" class="uppercase">View All Users</a>
-						</div>
 						<!-- /.box-footer -->
 					</div>
 					<!--/.box -->
