@@ -42,22 +42,24 @@
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
   <script src="/data/timelinedata.js"></script>
+  <!-- jQuery 3 -->
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
   <link rel="stylesheet" href="/css/icons.css">
   <style>
   a .material-icons {
     vertical-align: middle;
 }
-.nav>li {
+.main-header .nav>li {
     width: 74px;
 }
-.navbar-nav>li{
+.main-header .navbar-nav>li{
 	width: auto !important;
 }
-.nav>li>a {
+.main-header .nav>li>a {
    padding: 0px !important;
 }
 
-.navbar-nav>li>a{
+.main-header .navbar-nav>li>a{
 	padding: 10px 15px !important;
 }
 	.card {
@@ -452,6 +454,22 @@
 
 .navbar-nav>li>a{
 	line-height: 12px;
+}
+
+.bellspan[data-count]:after{
+  position:absolute;
+  right:0%;
+  top:1%;
+  content: attr(data-count);
+  font-size:20%;
+  padding:.6em;
+  border-radius:999px;
+  line-height:.75em;
+  color: white;
+  background:rgba(255,0,0,.85);
+  text-align:center;
+  min-width:2em;
+  font-weight:bold;
 }
 
   </style>

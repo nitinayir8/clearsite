@@ -1,7 +1,5 @@
 {{>header}}
-<script type="text/javascript">
-console.log(timeline_obj);
-</script
+
              <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -18,13 +16,24 @@ console.log(timeline_obj);
 
     <!-- Main content -->
     <section class="content">
-      
+
       <!-- /.row -->
       <!-- Main row -->
       <div class="row">
         <!-- Left col -->
         <section class="col-lg-5 connectedSortable">
-          <div class="box box-solid bg-light-blue-gradient">
+		 <div class="form-group">
+                <label>Date and time range:</label>
+
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="fa fa-clock-o"></i>
+                  </div>
+                  <input type="text" class="form-control pull-right" id="reservationtime">
+                </div>
+                <!-- /.input group -->
+              </div>
+        <div class="box box-solid bg-light-blue-gradient">
             <div class="box-header">
               <!-- tools box -->
               <div class="pull-right box-tools">
@@ -41,91 +50,36 @@ console.log(timeline_obj);
               </h3>
             </div>
             <div class="box-body" id="timeline-body">
+			
              <!--Start Timeline-->
 			 <section id="cd-timeline" class="cd-container">
+				{{#timeline_obj}}
 				<div class="cd-timeline-block">
-					<div class="cd-timeline-img cd-picture">
-						<i class="fa fa-camera"></i>
-					</div> <!-- cd-timeline-img -->
-
+					{{#compliancetype}}
+						<div class="cd-timeline-img cd-camera">
+							<i class="fa fa-camera"></i>
+						</div> <!-- cd-timeline-img -->
+					{{/compliancetype}}
+					{{^compliancetype}}
+						<div class="cd-timeline-img cd-image">
+							<i class="fa fa-image"></i>
+						</div> <!-- cd-timeline-img -->
+					{{/compliancetype}}
 					<div class="cd-timeline-content">
-						<h2>Title of section 1</h2>
+						<h2>{{title}}</h2>
 						<div>
-							<img src="images/rakesh.jpg">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+							<img src="images/{{img}}">
+							<p>{{description}}</p>
 						</div>
-						<span class="cd-date">Jan 14</span>
+						<span class="cd-date">{{date}}</span>
 					</div> <!-- cd-timeline-content -->
 				</div> <!-- cd-timeline-block -->
-
-				<div class="cd-timeline-block">
-					<div class="cd-timeline-img cd-movie">
-						<i class="fa fa-image"></i>
-					</div> <!-- cd-timeline-img -->
-
-					<div class="cd-timeline-content">
-						<h2>Title of section 2</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-						
-						<span class="cd-date">Jan 18</span>
-					</div> <!-- cd-timeline-content -->
-				</div> <!-- cd-timeline-block -->
-
-				<div class="cd-timeline-block">
-					<div class="cd-timeline-img cd-picture">
-						<i class="fa fa-camera"></i>
-					</div> <!-- cd-timeline-img -->
-
-					<div class="cd-timeline-content">
-						<h2>Title of section 3</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
-						
-						<span class="cd-date">Jan 24</span>
-					</div> <!-- cd-timeline-content -->
-				</div> <!-- cd-timeline-block -->
-
-				<div class="cd-timeline-block">
-					<div class="cd-timeline-img cd-picture">
-						<i class="fa fa-camera"></i>
-					</div> <!-- cd-timeline-img -->
-
-					<div class="cd-timeline-content">
-						<h2>Title of section 4</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-						
-						<span class="cd-date">Feb 14</span>
-					</div> <!-- cd-timeline-content -->
-				</div> <!-- cd-timeline-block -->
-
-				<div class="cd-timeline-block">
-					<div class="cd-timeline-img cd-picture">
-						<i class="fa fa-camera"></i>
-					</div> <!-- cd-timeline-img -->
-
-					<div class="cd-timeline-content">
-						<h2>Title of section 5</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-						
-						<span class="cd-date">Feb 18</span>
-					</div> <!-- cd-timeline-content -->
-				</div> <!-- cd-timeline-block -->
-
-				<div class="cd-timeline-block">
-					<div class="cd-timeline-img cd-movie">
-						<i class="fa fa-image"></i>
-					</div> <!-- cd-timeline-img -->
-
-					<div class="cd-timeline-content">
-						<h2>Final Section</h2>
-						<p>This is the content of the last section</p>
-						<span class="cd-date">Feb 26</span>
-					</div> <!-- cd-timeline-content -->
-				</div> <!-- cd-timeline-block -->
+				{{/timeline_obj}}
 			</section> <!-- cd-timeline -->
 					 <!--End Timeline-->
 					</div>
 					
-				  </div>
+		</div>
           <!-- /.nav-tabs-custom -->
 
         </section>
@@ -144,150 +98,163 @@ console.log(timeline_obj);
               </div>
               <!-- /. tools -->
 
-              <i class="fa fa-map-marker"></i>
+              <i class="fa fa-video-camera"></i>
 
               <h3 class="box-title">
                 Streaming Live Camera
               </h3>
             </div>
             <div class="box-body">
-              <div id="live-camera" style="height: 250px; width: 100%;">Testing data</div>
+              <iframe src="http://10.244.25.174:11000/" width="100%" height="200">
+				alternative content for browsers which do not support iframe.
+			</iframe>
             </div>
             
           </div>
           <!-- /.box -->
+		  <div class="row">
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-aqua">
+            <div class="inner">
+              <h3>90</h3>
 
-          <!-- solid sales graph -->
-          <div class="box box-solid bg-teal-gradient">
-            <div class="box-header">
-              <i class="fa fa-th"></i>
+              <p>Average Compliance %</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-clipboard"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-green">
+            <div class="inner">
+              <h3>30</h3>
 
-              <h3 class="box-title">Sales Graph</h3>
+              <p>Smart camera false alarms</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-ios-alarm"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-yellow">
+            <div class="inner">
+              <h3>80</h3>
+
+              <p>Number of issues detected</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-android-warning"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-red">
+            <div class="inner">
+              <h3>10</h3>
+
+              <p>Days since last issue</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-android-warning"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+      </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="box box-success">
+            <div class="box-header with-border">
+              <h3 class="box-title">Comparison with Cameras</h3>
 
               <div class="box-tools pull-right">
-                <button type="button" class="btn bg-teal btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
-                <button type="button" class="btn bg-teal btn-sm" data-widget="remove"><i class="fa fa-times"></i>
-                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
               </div>
             </div>
-            <div class="box-body border-radius-none">
-              <div class="chart" id="line-chart" style="height: 250px;"></div>
+            <div class="box-body">
+              <div class="chart">
+                <canvas id="barChart" style="height: 230px; width: 510px;" width="510" height="230"></canvas>
+              </div>
             </div>
             <!-- /.box-body -->
-            <div class="box-footer no-border">
-              <div class="row">
-                <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
-                  <input type="text" class="knob" data-readonly="true" value="20" data-width="60" data-height="60"
-                         data-fgColor="#39CCCC">
-
-                  <div class="knob-label">Mail-Orders</div>
-                </div>
-                <!-- ./col -->
-                <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
-                  <input type="text" class="knob" data-readonly="true" value="50" data-width="60" data-height="60"
-                         data-fgColor="#39CCCC">
-
-                  <div class="knob-label">Online</div>
-                </div>
-                <!-- ./col -->
-                <div class="col-xs-4 text-center">
-                  <input type="text" class="knob" data-readonly="true" value="30" data-width="60" data-height="60"
-                         data-fgColor="#39CCCC">
-
-                  <div class="knob-label">In-Store</div>
-                </div>
-                <!-- ./col -->
-              </div>
-              <!-- /.row -->
-            </div>
-            <!-- /.box-footer -->
           </div>
-          <!-- /.box -->
-
-          <!-- Calendar -->
-          <div class="box box-solid bg-green-gradient">
-            <div class="box-header">
-              <i class="fa fa-calendar"></i>
-
-              <h3 class="box-title">Calendar</h3>
-              <!-- tools box -->
-              <div class="pull-right box-tools">
-                <!-- button with a dropdown -->
-                <div class="btn-group">
-                  <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown">
-                    <i class="fa fa-bars"></i></button>
-                  <ul class="dropdown-menu pull-right" role="menu">
-                    <li><a href="#">Add new event</a></li>
-                    <li><a href="#">Clear events</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">View calendar</a></li>
-                  </ul>
-                </div>
-                <button type="button" class="btn btn-success btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-success btn-sm" data-widget="remove"><i class="fa fa-times"></i>
-                </button>
-              </div>
-              <!-- /. tools -->
             </div>
-            <!-- /.box-header -->
-            <div class="box-body no-padding">
-              <!--The calendar -->
-              <div id="calendar" style="width: 100%"></div>
-            </div>
-            <!-- /.box-body -->
-            <div class="box-footer text-black">
-              <div class="row">
-                <div class="col-sm-6">
-                  <!-- Progress bars -->
-                  <div class="clearfix">
-                    <span class="pull-left">Task #1</span>
-                    <small class="pull-right">90%</small>
-                  </div>
-                  <div class="progress xs">
-                    <div class="progress-bar progress-bar-green" style="width: 90%;"></div>
-                  </div>
+            <!-- /.col -->
 
-                  <div class="clearfix">
-                    <span class="pull-left">Task #2</span>
-                    <small class="pull-right">70%</small>
-                  </div>
-                  <div class="progress xs">
-                    <div class="progress-bar progress-bar-green" style="width: 70%;"></div>
-                  </div>
-                </div>
-                <!-- /.col -->
-                <div class="col-sm-6">
-                  <div class="clearfix">
-                    <span class="pull-left">Task #3</span>
-                    <small class="pull-right">60%</small>
-                  </div>
-                  <div class="progress xs">
-                    <div class="progress-bar progress-bar-green" style="width: 60%;"></div>
-                  </div>
+            <div class="col-md-6">
+				 <div class="box box-default">
+				<div class="box-header with-border">
+				  <h3 class="box-title">Issues Detected</h3>
 
-                  <div class="clearfix">
-                    <span class="pull-left">Task #4</span>
-                    <small class="pull-right">40%</small>
-                  </div>
-                  <div class="progress xs">
-                    <div class="progress-bar progress-bar-green" style="width: 40%;"></div>
-                  </div>
-                </div>
-                <!-- /.col -->
-              </div>
-              <!-- /.row -->
+				  <div class="box-tools pull-right">
+					<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+					</button>
+					<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+				  </div>
+				</div>
+				<!-- /.box-header -->
+				<div class="box-body">
+				  <div class="row">
+					<div class="col-md-5">
+					  <div class="chart-responsive">
+						<canvas id="pieChart" height="150"></canvas>
+					  </div>
+					  <!-- ./chart-responsive -->
+					</div>
+					<!-- /.col -->
+					<div class="col-md-7">
+					  <ul class="chart-legend clearfix">
+						<li><i class="fa fa-circle-o text-red"></i> Tail Gating</li>
+						<li><i class="fa fa-circle-o text-green"></i> Without Badge</li>
+						<li><i class="fa fa-circle-o text-yellow"></i> Unknown Detection</li>
+						<li><i class="fa fa-circle-o text-aqua"></i> UnAuthorized Objects</li>
+						<li><i class="fa fa-circle-o text-light-blue"></i> Restricted Area</li>
+						<li><i class="fa fa-circle-o text-gray"></i> Maintenance Issues</li>
+					  </ul>
+					</div>
+					<!-- /.col -->
+				  </div>
+				  <!-- /.row -->
+				</div>
+				<!-- /.box-body -->
+				<div class="box-footer no-padding">
+				  <ul class="nav nav-pills nav-stacked">
+					<li><a href="#">United States of America
+					  <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 12%</span></a></li>
+					<li><a href="#">India <span class="pull-right text-green"><i class="fa fa-angle-up"></i> 4%</span></a>
+					</li>
+					<li><a href="#">China
+					  <span class="pull-right text-yellow"><i class="fa fa-angle-left"></i> 0%</span></a></li>
+				  </ul>
+				</div>
+				<!-- /.footer -->
+			  </div>
             </div>
+            <!-- /.col -->
           </div>
-          <!-- /.box -->
-
+		  
         </section>
         <!-- right col -->
       </div>
       <!-- /.row (main row) -->
 
     </section>
+	
     <!-- /.content -->
   </div>
 			

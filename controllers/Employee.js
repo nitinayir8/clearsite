@@ -49,11 +49,57 @@ module.exports = BaseController.extend(
 			},
 			analytics: function(req,res,next)
 			{   
+			 
+			var timeline_obj = [
+					{
+						"title":"Tiles Broke",
+						"date":"12 October",
+						"img":"rakesh.jpg",
+						"description":"Tiles is broken in cafeteria II.",
+						"compliancetype":"camera"
+					},
+					   {
+						"title":"Tiles Broke1",
+						"date":"14 June",
+						"img":"nitin.jpg",
+						"description":"Tiles is broken in cafeteria I.",
+						"compliancetype":"picture"
+					},
+					{
+						"title":"Tiles Broke",
+						"date":"12 October",
+						"img":"rakesh.jpg",
+						"description":"Tiles is broken in cafeteria II.",
+						"compliancetype":"camera"
+					},
+					   {
+						"title":"Tiles Broke1",
+						"date":"14 June",
+						"img":"nitin.jpg",
+						"description":"Tiles is broken in cafeteria I.",
+						"compliancetype":"picture"
+					},
+					{
+						"title":"Tiles Broke",
+						"date":"12 October",
+						"img":"rakesh.jpg",
+						"description":"Tiles is broken in cafeteria II.",
+						"compliancetype":"camera"
+					},
+					   {
+						"title":"Tiles Broke1",
+						"date":"14 June",
+						"img":"nitin.jpg",
+						"description":"Tiles is broken in cafeteria I.",
+						"compliancetype":"picture"
+					}
+				]
                 var v = new View(res, 'analytics');
 				v.render({
 					title: 'Analytics',
 					analytics: true,
-					dashboard: false
+					dashboard: false,
+					timeline_obj:timeline_obj
 				});
 			}
 		}

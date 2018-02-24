@@ -11,6 +11,6 @@ var timeline_obj = [
 		"date":"14 June",
 		"img":"nitin.jpg",
 		"description":"Tiles is broken in cafeteria I.",
-		"compliancetype":"picture"
+		"compliancetype":"image"
 	}
 ]

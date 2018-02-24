@@ -138,7 +138,6 @@ header h1 {
   height: 40px;
   border-radius: 50%;
   border: 2px solid #dce0e0;
-  background-color: #FFF;
 }
 .cd-timeline-img i {
     display: block;
@@ -167,7 +166,6 @@ header h1 {
     /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
-	background-color: #FFF;
   }
   .cssanimations .cd-timeline-img.is-hidden {
     visibility: hidden;
@@ -246,9 +244,7 @@ header h1 {
   box-shadow: 0 3px 0 #d7e4ed;
 }
 .cd-timeline-content img{
-	width: 30px;
-    display: inline-block;
-  vertical-align: top;
+	width:30px;
 }
 .cd-timeline-content:after {
   content: "";
@@ -268,8 +264,8 @@ header h1 {
 .cd-timeline-content p {
   margin: 1em 0;
   line-height: 1.6;
-      color: #283747;
-  min-height: 40px;
+      color: #acb7c0;
+  height: 60px;
     overflow: auto;
 }
 .cd-timeline-content .cd-read-more {
@@ -301,14 +297,10 @@ header h1 {
   .cd-timeline-content h2 {
     font-size: 12px;
     font-weight: bold;
-	margin-top: 5px;
   }
   .cd-timeline-content p {
+    font-size: 16px;
     font-size: 10px;
-    width: 75%;
-    display: inline-block;
-    vertical-align: top;
-	    margin: 0;
   }
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     font-size: 14px;
@@ -318,7 +310,7 @@ header h1 {
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
     margin-left: 0;
-    padding: 5px;
+    padding: 1em;
     width: 42%;
   }
   .cd-timeline-content::before {
@@ -337,7 +329,7 @@ header h1 {
     top: 0%;
     font-size: 14px !important;
     font-size: 1rem;
-    color: #283747;
+    color: #bfbabb;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;
